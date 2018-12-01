@@ -1,0 +1,23 @@
+{
+  "name": "Word-Guess-Cli",
+  "version": "1.0.0",
+  "description": "In this unit's assignment, you will create a Word Guess command-line game using constructor functions.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/savinaxu/Word-Guess-Cli.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/savinaxu/Word-Guess-Cli/issues"
+  },
+  "homepage": "https://github.com/savinaxu/Word-Guess-Cli#readme",
+  "dependencies": {
+    "inquirer": "^6.2.0"
+  }
+}
