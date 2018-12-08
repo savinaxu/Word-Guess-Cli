@@ -1,8 +1,8 @@
 let Letter = function (char) {
     this.char = char.toLowerCase()
-    this.guess = false
+    this.guessed = false
     this.display = function() {
-        if (!this.guess) {
+        if (!this.guessed) {
             return "_"
         } else {
             return this.char
@@ -10,7 +10,7 @@ let Letter = function (char) {
     }
     this.check = function(userInput) { 
         if (userInput.toLowerCase() === this.char) {
-            this.guess = true
+            this.guessed = true
         }
     }
 }
