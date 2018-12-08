@@ -2,7 +2,7 @@ let Word = require("./word.js")
 let inquirer = require("inquirer")
 
 
-let wordList = ["gifts", "cookies", "jingle bells", "christmas eve", "santa claus", "snow", "reindeer", "christmas tree"]
+let wordList = ["gifts", "cookies", "jingle", "christmas", "santa", "snow", "reindeer", "eve"]
 let randomIndex = 0
 let chosenWord = ""
 let gameWord = ""
@@ -26,12 +26,12 @@ function rightGuess() {
 function checkAnswer(data) {
     if ((data.letter.length === 1) && /^[a-zA-Z]+$/.test(data.letter)) {
         let trans = data.letter.toLowerCase()
-        let temp = GameWord.showWord()
+        let temp = gameWord.showWord()
         gameWord.checkGuess(trans)
         if (temp === gameWord.showWord()) {
             console.log("\nSorry, wrong letter!\n");
             counter++;
-            console.log(((8 - counter) + " guesses remaining"));
+            console.log(((9 - counter) + " guesses remaining"));
             guess();
         } else {
             rightGuess();
